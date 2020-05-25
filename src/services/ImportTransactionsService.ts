@@ -76,6 +76,8 @@ class ImportTransactionsService {
     );
 
     await transactionsRepository.save(createdTransactions);
+
+    return createdTransactions;
   }
 }
 
